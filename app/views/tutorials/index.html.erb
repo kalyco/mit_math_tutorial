@@ -1,3 +1,7 @@
+<!-- the top profile user index. might render at bottom or as a side column. Going to list user profile link. -->
+
+<!-- this will list off each tutorial. if the visitor is logged in it will also display a progress bar next to the tutorial link. -->
+
 <ul>
   <% @tutorials.each do |tutorial| %>
     <li><%= link_to "#{tutorial.name}", tutorial_path(tutorial) %></li>
